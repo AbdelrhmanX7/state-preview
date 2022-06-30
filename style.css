@@ -1,0 +1,220 @@
+* {
+    margin: 0px;
+}
+body {
+    width: 100vw; height: 100vh;
+    background-color: hsl(67, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 1152px; height: 50%;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 7px;
+    display: flex;
+}
+.continer {
+    width: 576px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-all-text {
+    width: 465.594px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 24px 0px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family:  'Inter', sans-serif;
+    color: white;
+}
+.header-text {
+    font-size: 36px;
+    font-weight: 700;
+    width: 405.062px;
+}
+span {
+    color: blueviolet;
+}
+.desc-text {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    width: 400.406px;
+    line-height: 1.7;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.main-states {
+    width: 372.469px;
+    display: flex;
+    justify-content: space-between;
+}
+.state-number {
+    font-size: 22px;
+    font-weight: 700;
+}
+.state-text {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    margin-top: 5px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+}
+.main-img {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.main-img > img {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.img-back {
+    background-color: hsl(277deg 100% 34%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+@media screen and (max-width: 1200px) {
+    main {
+        width: 957.594px;
+    }
+    .continer {
+        width: 478.797px;
+    }
+}
+@media screen and (max-width: 990px) {
+    main {
+        width: 80%; height: 45%;
+    }
+    .continer {
+        width: 50%;
+    }
+    .header-text {
+        font-size: 25px;
+        width: 268.25px;
+    }
+    .desc-text {
+        width: 81%;
+        font-size: 12px;
+    }
+    .main-states {
+        width: 73%;
+    }
+    .state-number {
+        font-size: 17px;
+    }
+    .state-text {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 720px) {
+    main {
+        width: 80%; height: 35%;
+    }
+    .header-text {
+        font-size: 20px;
+        width: 80%;
+    }
+    .desc-text {
+        width: 100%;
+        font-size: 11px;
+    }
+    .main-states {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 550px) {
+    main {
+        width: 90%;
+        height: 90%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        text-align: center;
+    }
+    .main-img {
+        width: 100%;
+        height: 50%;
+    }
+    .continer {
+        width: 100%;
+        height: 100%;
+    }
+    .main-all-text {
+        width: 100%;
+        padding: 24px;
+        align-items: center;
+    }
+    .header-text {
+        font-size: 30px;
+    }
+    .desc-text {
+        font-size: 16px;
+    }
+    .main-states {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .state-all-text {
+        margin-top: 30px;
+    }
+    .state-number {
+        font-size: 25px
+    }
+    .state-text {
+        font-size: 14px;
+    }
+    .main-img > img {
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        border-bottom-right-radius: 0px;
+    }
+    .img-back {
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        border-bottom-right-radius: 0px;
+    }
+}
+@media screen and (max-width: 350px) {
+    body {
+        height: 125vh;
+    }
+    main {
+        height: fit-content;
+    }
+    .main-all-text {
+        padding: 24px 12px;
+    }
+    .header-text {
+        width: 100%;
+        font-size: 26px;
+    }
+    .desc-text {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .main-states {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .state-number {
+        font-size: 24px;
+    }
+    .state-text {
+        font-size: 13px;
+        letter-spacing: 1.2px;
+        font-weight: 400;
+    }
+    .main-img {
+        height: 243.344px;
+    }
+}
